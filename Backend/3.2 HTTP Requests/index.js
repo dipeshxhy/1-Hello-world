@@ -5,9 +5,21 @@ const port = 3000;
 app.get("/", (req, res) => {
   res.send("<h1>Hello</h1>");
 });
+app.post("/register", (req, res) => {
+  res.sendStatus(201);
+});
+app.put("/users/dipesh", (req, res) => {
+  res.sendStatus(200);
+});
+app.patch("/users/dipesh", (req, res) => {
+  res.sendStatus(200);
+});
+app.delete("/users/dipesh", (req, res) => {
+  res.sendStatus(204);
+});
 
 app.get("/about", (req, res) => {
-  res.send("<h1>About Me</h1><p>My name is Angela</p>");
+  res.send("<h1>About Me</h1><p>My name is Dipesh</p>");
 });
 
 app.get("/contact", (req, res) => {
