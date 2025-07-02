@@ -1,0 +1,19 @@
+
+<%- include('partials/head.ejs') %>
+<link rel="stylesheet" href="/styles/home.css">
+</head>
+  <body>
+<%- include('partials/header.ejs') %>
+<div class="container mt-5">
+    <h1 class="display-5 fw-bold  hero-title">Blog Details</h1>
+    <div class="card mb-4 shadow-sm">
+        <img src="<%= blog.image %>" class="card-img-top img-fluid" alt="Blog Image" >
+        <div class="card-body">
+            <h5 class="card-title"><%= blog.title %></h5>
+            <p class="card-text"><%= blog.content %></p>
+        </div>
+    </div>
+</div>
+
+  </body>
+</html>
